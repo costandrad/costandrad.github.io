@@ -20,18 +20,73 @@
                 <img src="assets/images/logo.png" class="logo">
                 <ul>
                     <li><a href="#">Início</a></li>
-                    <li><a href="#">Sobre mim</a></li>
+                    <li><a href="#about">Sobre mim</a></li>
                     <li><a href="#">Portifótlio</a></li>
                     <li><a href="#">Serviços</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
             </nav>
+
             <div class="header-text">
                 <p>Físico</p>
                 <h1>Igo da Costa Andrade</h1>
             </div>
         </div>
     </header>
+
+    <main>
+        <!-- about -->
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="assets/images/costandrad.jpeg" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">Sobre mim</h1>
+                        <p>
+                            Mestre em Matemática pela Universidade Federal do Tocantins (2014). Possui bacharelado em
+                            Ciências Contábeis (2022) pela Universidade Federal do Tocantins (UFT) e graduação em
+                            Licenciatura Plena em Física pelo Instituto Federal do Piauí (2009) . Desde 2009, atua no
+                            cargo de Físico, sendo responsável técnico pelo Laboratório de Ensino de Física do campus de
+                            Palmas da Universidade Federal do Tocantins (UFT).
+                        </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openTab('formacao')">Formação Acadêmica</p>
+                            <p class="tab-links" onclick="openTab('experiencia')">Experiência Profssional</p>
+                            <p class="tab-links" onclick="openTab('habilidades')">Habilidades</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="formacao">
+                            <ul>
+                                <li><span>Mestrado Profissional em Matemática - PROFMAT</span> <br> Universidade Federal
+                                    do Tocantins (2014)</li>
+                                <li><span>Bacharelado em Ciências Contábeis</span> <br> Universidade Federal do
+                                    Tocantins (2022)</li>
+                                <li><span>Licenciatura Plena em Física</span> <br> Instituto Federal do Piauí (2009)
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experiencia">
+                            <ul>
+                                <li><span>Físico</span> <br> Laboratório de Ensino de Física, Universidade Federal do Tocantins (UFT), campus de Palmas desde 2009</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="habilidades">
+                            <ul>
+                                <li><span>Python</span> <br> Propósito Geral e Ciência de Dados</li>
+                                <li><span>R</span> <br> Estatística e Ciência de Dados</li>
+                                <li><span>LaTeX</span> <br> Escrita Científica
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
+
+<script src="assets/js/script.js"></script>
 </html>
