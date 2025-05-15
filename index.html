@@ -30,7 +30,7 @@
                     <span></span>
                 </div>
                 <div class="menu-links">
-                    <li><a href="#about" onclick="toggleMenu()">Perfil</a></li>
+                    <li><a href="#profile" onclick="toggleMenu()">Perfil</a></li>
                     <li><a href="#experience" onclick="toggleMenu()">Experiência</a></li>
                     <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
                     <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
@@ -39,7 +39,29 @@
         </nav>
     </header>
 
-    <main></main>
+    <main>
+        <section id="profile">
+            <div class="section__pic-container">
+                <img src="assets/images/profile-pic.png" alt="Igo Andrade">
+            </div>
+            <div class="section__text">
+                <h1 class="title">Igo da Costa Andrade</h1>
+                <p class="section__text__p">Físico - UFT</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-1" onclick="window.open('./assets/resume-example.pdf')">
+                        Download CV
+                    </button>
+                    <button class="btn btn-color-2" onclick="location.href ='./#contact'">
+                        Entre em Contato
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <img src="./assets/images/linkedin.png" alt="My linkedin profile" class="icon" onclick="window.open('https://br.linkedin.com', '_blank')">
+                    <img src="./assets/images/github.png" alt="My github profile" class="icon" onclick="window.open('https://github.com/costandrad', '_blank')">
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer></footer>
 
