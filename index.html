@@ -1,70 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Costandrad - Portifólio Pessoal</title>
 
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/media_queries.css">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/media_queries.css" />
+  </head>
+  <body>
     <header>
-        <nav id="desktop-nav">
-            <div class="logo">Costandrad.</div>
-            <div class="">
-                <ul class="nav-links">
-                    <li><a href="#about">Perfil</a></li>
-                    <li><a href="#experience">Experiência</a></li>
-                    <li><a href="#projects">Projetos</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-            </div>
-        </nav>
-        <nav id="hamburger-nav">
-            <div class="logo">Costandrad.</div>
-            <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="menu-links">
-                    <li><a href="#profile" onclick="toggleMenu()">Perfil</a></li>
-                    <li><a href="#experience" onclick="toggleMenu()">Experiência</a></li>
-                    <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
-                    <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
-                </div>
-            </div>
-        </nav>
+      <nav id="desktop-nav">
+        <div class="logo">Costandrad.</div>
+        <div class="">
+          <ul class="nav-links">
+            <li><a href="#profile">Perfil</a></li>
+            <li><a href="#about">Sobre mim</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Costandrad.</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <ul class="menu-items">
+              <li><a href="#profile" onclick="toggleMenu()">Perfil</a></li>
+              <li><a href="#about" onclick="toggleMenu()">Sobre mim</a></li>
+              <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+              <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section id="profile">
+      <section id="profile">
+        <div class="section__pic-container">
+          <img src="assets/images/profile-pic.png" alt="Igo Andrade" />
+        </div>
+        <div class="section__text">
+          <h1 class="title">Igo da Costa Andrade</h1>
+          <p class="section__text__p">Físico - UFT</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-1"
+              onclick="window.open('./assets/resume-example.pdf')"
+            >
+              Download CV
+            </button>
+            <button
+              class="btn btn-color-1"
+              onclick="location.href ='./#contact'"
+            >
+              Entre em Contato
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="./assets/images/linkedin.png"
+              alt="My linkedin profile"
+              class="icon"
+              onclick="window.open('https://br.linkedin.com', '_blank')"
+            />
+            <img
+              src="./assets/images/github.png"
+              alt="My github profile"
+              class="icon"
+              onclick="window.open('https://github.com/costandrad', '_blank')"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <h1 class="title">Sobre mim</h1>
+        <div class="section-container">
             <div class="section__pic-container">
-                <img src="assets/images/profile-pic.png" alt="Igo Andrade">
+                <img src="assets/images/about-pic.jpeg" alt="Profile Picture" class="about-pic">
             </div>
-            <div class="section__text">
-                <h1 class="title">Igo da Costa Andrade</h1>
-                <p class="section__text__p">Físico - UFT</p>
-                <div class="btn-container">
-                    <button class="btn btn-color-1" onclick="window.open('./assets/resume-example.pdf')">
-                        Download CV
-                    </button>
-                    <button class="btn btn-color-2" onclick="location.href ='./#contact'">
-                        Entre em Contato
-                    </button>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-containers">
+                        <img src="assets/images/experience.png" alt="Expirience Icon" class="icon">
+                        <h3>Experiência</h3>
+                        <ul>
+                            <li><span style="font-weight: 500;">Físico</span><br>Universidade Federal do Tocantins desde 2009</li>
+                        </ul>
+                    </div>
+                    <div class="details-container">
+                        <img src="assets/images/education.png" alt="Education Icon" class="icon">
+                        <h3>Formação Acadêmica</h3>
+                        <ul>
+                            <li><span style="font-weight: 500;">Mestrado Profissional em Matemática - PROFMAT</span><br>Universidade Federal do Tocantins (2014)</li>
+                            <li><span style="font-weight: 500;">Bacharelado em Ciências Contábeis</span><br>Universidade Federal do Tocantins (2022)</li>
+                            <li><span style="font-weight: 500;">Licenciatura Plena em Física</span><br>Instituto Federal do Piauí (2009)</li>
+                        </ul>
+                    </div>
                 </div>
-                <div id="socials-container">
-                    <img src="./assets/images/linkedin.png" alt="My linkedin profile" class="icon" onclick="window.open('https://br.linkedin.com', '_blank')">
-                    <img src="./assets/images/github.png" alt="My github profile" class="icon" onclick="window.open('https://github.com/costandrad', '_blank')">
-                </div>
+                <img src="assets/images/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#expirience'">
             </div>
-        </section>
+        </div>
+      </section>
     </main>
 
     <footer></footer>
 
     <script src="assets/js/script.js"></script>
-</body>
+  </body>
 </html>

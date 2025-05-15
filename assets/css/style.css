@@ -94,10 +94,12 @@ a:hover {
     top: 100%;
     right: 0;
     background-color: white;
-    width: fit-content;
+    width: 100vw;
     max-height: 0;
     overflow: hidden;
     transition: all 0.3 ease-in-out;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .menu-links a {
@@ -117,6 +119,7 @@ a:hover {
 .menu-links.open {
     max-height: 300px;
 }
+
 
 .hamburger-icon.open span:first-child {
     transform: rotate(45deg) translate(10px, 5px);
@@ -256,5 +259,31 @@ section {
 
 
 /* About */
+#about {
+    position: relative;
+}
+
+.about-contaiers {
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers, .about-details-container {
+    display: flex;
+}
+
+.about-pic {
+    border-radius: 2rem;
+}
+
+.arrow {
+    position: absolute;
+}
 
 /* Experience */
