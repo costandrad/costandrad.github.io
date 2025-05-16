@@ -467,12 +467,6 @@ h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Global Main
---------------------------------------------------------------*/
-.main {
-  padding-top: 0px;
-}
 
 /*--------------------------------------------------------------
 # Global Footer
@@ -725,23 +719,23 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# about Section
 --------------------------------------------------------------*/
-.hero {
+.about {
   padding: 80px 0;
 }
 
-.hero .hero-content {
+.about .about-content {
   margin-bottom: 2rem;
 }
 
 @media (min-width: 992px) {
-  .hero .hero-content {
+  .about .about-content {
     margin-bottom: 0;
   }
 }
 
-.hero .hero-tag {
+.about .about-tag {
   display: inline-flex;
   align-items: center;
   background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
@@ -750,27 +744,27 @@ section,
   margin-bottom: 1rem;
 }
 
-.hero .hero-tag i {
+.about .about-tag i {
   color: var(--accent-color);
   margin-right: 0.5rem;
 }
 
-.hero .hero-tag span {
+.about .about-tag span {
   color: var(--accent-color);
   font-weight: 600;
 }
 
-.hero h1 {
+.about h1 {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
-.hero h1 .highlight {
+.about h1 .highlight {
   color: var(--accent-color);
 }
 
-.hero h2 .highlight {
+.about h2 .highlight {
   color: var(--default-color);
   text-decoration: underline;
   text-decoration-color: var(--accent-color);
@@ -778,49 +772,49 @@ section,
 }
 
 @media (min-width: 992px) {
-  .hero h1 {
+  .about h1 {
     font-size: 3.0rem;
   }
 }
 
-.hero .lead {
+.about .lead {
   color: color-mix(in srgb, var(--default-color), transparent 25%);
   margin-bottom: 1.5rem;
 }
 
-.hero .hero-features {
+.about .about-features {
   list-style: none;
   padding-left: 0;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
 
-.hero .hero-features li {
+.about .about-features li {
   margin-bottom: 0.5rem;
   align-items: start;
   font-weight: 600;
 }
 
-.hero .hero-features li::before {
+.about .about-features li::before {
   content: "✓"; /* Símbolo de check */
   color: var(--accent-color);
   margin-right: 8px;
 }
 
-.hero .hero-features li span {
+.about .about-features li span {
   margin-left: 25px;
   color: color-mix(in srgb, var(--default-color), transparent 25%);
   font-weight: normal;
 }
 
 
-.hero .hero-cta {
+.about .about-cta {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
-.hero .hero-cta .btn-primary {
+.about .about-cta .btn-primary {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
   color: var(--contrast-color);
@@ -829,12 +823,12 @@ section,
   transition: all 0.3s ease;
 }
 
-.hero .hero-cta .btn-primary:hover {
+.about .about-cta .btn-primary:hover {
   background-color: color-mix(in srgb, var(--accent-color), black 10%);
   border-color: color-mix(in srgb, var(--accent-color), black 10%);
 }
 
-.hero .hero-cta .btn-link {
+.about .about-cta .btn-link {
   color: var(--heading-color);
   font-weight: 600;
   text-decoration: none;
@@ -842,24 +836,24 @@ section,
   align-items: center;
 }
 
-.hero .hero-cta .btn-link i {
+.about .about-cta .btn-link i {
   margin-right: 0.5rem;
 }
 
-.hero .hero-cta .btn-link:hover {
+.about .about-cta .btn-link:hover {
   color: var(--accent-color);
 }
 
-.hero .hero-image-wrapper {
+.about .about-image-wrapper {
   position: relative;
   padding: 0 40px;
 }
 
-.hero .hero-image-wrapper .hero-image {
+.about .about-image-wrapper .about-image {
   border-radius: 10px;
 }
 
-.hero .hero-image-wrapper .stat-card {
+.about .about-image-wrapper .stat-card {
   position: absolute;
   background-color: var(--surface-color);
   padding: 1rem;
@@ -871,387 +865,51 @@ section,
   min-width: 150px;
 }
 
-.hero .hero-image-wrapper .stat-card.top-right {
+.about .about-image-wrapper .stat-card.top-right {
   top: 40px;
   right: 0px;
 }
 
-.hero .hero-image-wrapper .stat-card.bottom-left {
+.about .about-image-wrapper .stat-card.bottom-left {
   bottom: 40px;
   left: 0px;
 }
 
-.hero .hero-image-wrapper .stat-card .stat-value {
+.about .about-image-wrapper .stat-card .stat-value {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--accent-color);
   margin-bottom: 0.25rem;
 }
 
-.hero .hero-image-wrapper .stat-card .stat-label {
+.about .about-image-wrapper .stat-card .stat-label {
   font-size: 0.875rem;
   color: var(--heading-color);
   margin-bottom: 0.5rem;
 }
 
-.hero .hero-image-wrapper .stat-card .stat-icon {
+.about .about-image-wrapper .stat-card .stat-icon {
   align-self: flex-end;
   font-size: 1.25rem;
   color: color-mix(in srgb, var(--accent-color), transparent 50%);
 }
 
 @media (max-width: 575px) {
-  .hero .hero-image-wrapper {
+  .about .about-image-wrapper {
     padding: 0;
   }
 
-  .hero .hero-image-wrapper .stat-card {
+  .about .about-image-wrapper .stat-card {
     position: relative;
   }
 
-  .hero .hero-image-wrapper .stat-card.top-right,
-  .hero .hero-image-wrapper .stat-card.bottom-left {
+  .about .about-image-wrapper .stat-card.top-right,
+  .about .about-image-wrapper .stat-card.bottom-left {
     inset: auto;
     margin-top: 30px;
   }
 }
 
-/*--------------------------------------------------------------
-# About Section
---------------------------------------------------------------*/
-.about .section-heading {
-  font-size: 2.5rem;
-  color: var(--heading-color);
-  margin-bottom: 1.5rem;
-  position: relative;
-  padding-bottom: 1rem;
-  font-weight: 700;
-}
-
-.about .section-heading:after {
-  content: "";
-  position: absolute;
-  width: 70px;
-  height: 3px;
-  background: var(--accent-color);
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.about .lead {
-  font-size: 1.2rem;
-  color: color-mix(in srgb, var(--default-color), transparent 25%);
-  margin-bottom: 2rem;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.about .feature-box {
-  background: var(--surface-color);
-  border-radius: 12px;
-  padding: 2.5rem 1.5rem;
-  text-align: center;
-  height: 100%;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.about .feature-box:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 0;
-  background: color-mix(in srgb, var(--accent-color), transparent 92%);
-  z-index: -1;
-  transition: height 0.5s cubic-bezier(0.65, 0, 0.35, 1);
-  border-radius: 12px;
-}
-
-.about .feature-box:hover {
-  transform: translateY(-10px);
-  box-shadow: none;
-}
-
-.about .feature-box:hover:before {
-  height: 100%;
-}
-
-.about .feature-box:hover .icon-container {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-}
-
-.about .feature-box .icon-container {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background: color-mix(in srgb, var(--accent-color), transparent 90%);
-  color: var(--accent-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 1.5rem;
-  font-size: 1.8rem;
-  transition: all 0.3s ease;
-  box-shadow: 0 5px 15px color-mix(in srgb, var(--accent-color), transparent 85%);
-}
-
-.about .feature-box h4 {
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  color: var(--heading-color);
-}
-
-.about .feature-box p {
-  color: color-mix(in srgb, var(--default-color), transparent 25%);
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-
-.about .about-content-box {
-  padding: 2rem;
-}
-
-.about .about-content-box h3 {
-  font-size: 2rem;
-  color: var(--heading-color);
-  margin-bottom: 1.5rem;
-  font-weight: 700;
-  line-height: 1.3;
-}
-
-.about .about-content-box p {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-  margin-bottom: 1.5rem;
-  line-height: 1.7;
-}
-
-.about .about-content-box .progress-item {
-  margin-bottom: 1.2rem;
-}
-
-.about .about-content-box .progress-item .progress-title {
-  font-weight: 600;
-  color: var(--heading-color);
-  font-size: 1rem;
-}
-
-.about .about-content-box .progress-item .progress-percent {
-  font-weight: 700;
-  color: var(--accent-color);
-}
-
-.about .about-content-box .progress-item .progress {
-  height: 8px;
-  border-radius: 4px;
-  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
-  margin-top: 0.5rem;
-  overflow: hidden;
-}
-
-.about .about-content-box .progress-item .progress .progress-bar {
-  background-color: var(--accent-color);
-  border-radius: 4px;
-}
-
-.about .about-content-box .btn-discover {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-  border: none;
-  border-radius: 30px;
-  padding: 0.8rem 2rem;
-  font-weight: 600;
-  transition: all 0.3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.about .about-content-box .btn-discover:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: color-mix(in srgb, var(--accent-color), #000 15%);
-  transition: width 0.3s ease;
-  z-index: -1;
-  border-radius: 30px;
-}
-
-.about .about-content-box .btn-discover:hover {
-  box-shadow: 0 8px 25px color-mix(in srgb, var(--accent-color), transparent 80%);
-}
-
-.about .about-content-box .btn-discover:hover:before {
-  width: 100%;
-}
-
-.about .about-image-grid {
-  position: relative;
-  height: 540px;
-  margin: 0 2rem;
-}
-
-.about .about-image-grid .img-grid-main {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 70%;
-  height: 350px;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-  z-index: 1;
-}
-
-.about .about-image-grid .img-grid-secondary {
-  position: absolute;
-  bottom: 0;
-  right: 30%;
-  width: 50%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-  z-index: 2;
-}
-
-.about .about-image-grid .img-grid-tertiary {
-  position: absolute;
-  left: 0;
-  bottom: 70px;
-  width: 40%;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-  z-index: 3;
-}
-
-.about .about-image-grid .experience-badge {
-  position: absolute;
-  right: 10px;
-  bottom: 30px;
-  width: 120px;
-  height: 120px;
-  background: var(--accent-color);
-  border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: var(--contrast-color);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  z-index: 4;
-}
-
-.about .about-image-grid .experience-badge .years {
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: 1;
-  margin-bottom: 0.2rem;
-}
-
-.about .about-image-grid .experience-badge .text {
-  font-size: 0.8rem;
-  text-align: center;
-  max-width: 90px;
-  line-height: 1.2;
-}
-
-@media (max-width: 1199px) {
-  .about .about-image-grid {
-    height: 480px;
-  }
-
-  .about .about-image-grid .img-grid-main {
-    height: 300px;
-  }
-
-  .about .about-image-grid .img-grid-secondary {
-    height: 200px;
-  }
-
-  .about .about-image-grid .img-grid-tertiary {
-    height: 220px;
-  }
-}
-
-@media (max-width: 991px) {
-  .about .section-heading {
-    font-size: 2.2rem;
-  }
-
-  .about .about-content-box {
-    padding: 1.5rem;
-    margin-top: 2rem;
-  }
-
-  .about .about-content-box h3 {
-    font-size: 1.8rem;
-  }
-
-  .about .about-image-grid {
-    height: 450px;
-    margin: 0 auto;
-    max-width: 500px;
-  }
-
-  .about .about-image-grid .experience-badge {
-    width: 100px;
-    height: 100px;
-  }
-
-  .about .about-image-grid .experience-badge .years {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 767px) {
-  .about .section-heading {
-    font-size: 1.8rem;
-  }
-
-  .about .feature-box {
-    padding: 1.8rem 1rem;
-  }
-
-  .about .feature-box .icon-container {
-    width: 60px;
-    height: 60px;
-    font-size: 1.5rem;
-  }
-
-  .about .about-image-grid {
-    height: 400px;
-    margin-bottom: 2rem;
-  }
-
-  .about .about-image-grid .img-grid-main {
-    width: 75%;
-    height: 250px;
-  }
-
-  .about .about-image-grid .img-grid-secondary {
-    width: 55%;
-    height: 180px;
-  }
-
-  .about .about-image-grid .img-grid-tertiary {
-    width: 40%;
-    height: 180px;
-  }
-}
 
 /*--------------------------------------------------------------
 # Stats Section
@@ -1394,25 +1052,25 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Services Section
+# projects Section
 --------------------------------------------------------------*/
-.services {
+.projects {
   padding-top: 60px;
   padding-bottom: 30px;
 }
 
-.services .services-row {
+.projects .projects-row {
   position: relative;
 }
 
-.services .services-headline .services-subtitle {
+.projects .projects-headline .projects-subtitle {
   color: var(--accent-color);
   font-weight: 600;
   margin-bottom: 10px;
   font-size: 18px;
 }
 
-.services .services-headline .services-title {
+.projects .projects-headline .projects-title {
   color: var(--heading-color);
   font-size: 2.5rem;
   line-height: 1.2;
@@ -1420,45 +1078,45 @@ section,
   margin-bottom: 20px;
 }
 
-.services .services-description {
+.projects .projects-description {
   margin-bottom: 30px;
 }
 
-.services .services-description p {
+.projects .projects-description p {
   font-size: 1.1rem;
   line-height: 1.6;
 }
 
-.services .services-image-container {
+.projects .projects-image-container {
   position: relative;
   margin-bottom: 30px;
 }
 
-.services .services-image-container .services-image {
+.projects .projects-image-container .projects-image {
   position: relative;
   overflow: hidden;
   border-radius: 20px;
   height: 460px;
 }
 
-.services .services-image-container .services-image img {
+.projects .projects-image-container .projects-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.services .services-grid {
+.projects .projects-grid {
   margin-left: 50px;
 }
 
 @media (max-width: 991px) {
-  .services .services-grid {
+  .projects .projects-grid {
     margin-left: 0;
     margin-top: 70px;
   }
 }
 
-.services .service-card {
+.projects .project-card {
   background-color: color-mix(in srgb, var(--accent-color), transparent 92%);
   border-radius: 25px;
   padding: 30px 25px;
@@ -1468,28 +1126,28 @@ section,
   height: 100%;
 }
 
-.services .service-card:hover {
+.projects .project-card:hover {
   background-color: var(--accent-color);
   transform: translateY(-5px);
 }
 
-.services .service-card:hover .service-icon {
+.projects .project-card:hover .project-icon {
   color: var(--contrast-color);
   transform: scale(0.95);
 }
 
-.services .service-card:hover .service-info h3 a,
-.services .service-card:hover .service-info p {
+.projects .project-card:hover .project-info h3 a,
+.projects .project-card:hover .project-info p {
   color: var(--contrast-color);
   transform: scale(0.95);
 }
 
-.services .service-card:hover .service-content .read-more-btn {
+.projects .project-card:hover .project-content .read-more-btn {
   background-color: color-mix(in srgb, var(--contrast-color), transparent 84%);
   color: var(--contrast-color);
 }
 
-.services .service-content .service-icon {
+.projects .project-content .project-icon {
   width: 65px;
   height: 65px;
   line-height: 65px;
@@ -1499,29 +1157,29 @@ section,
   transition: all 0.3s ease;
 }
 
-.services .service-content .service-info h3 {
+.projects .project-content .project-info h3 {
   font-size: 1.4rem;
   margin: 15px 0;
   transition: all 0.3s ease;
 }
 
-.services .service-content .service-info h3 a {
+.projects .project-content .project-info h3 a {
   color: var(--heading-color);
   text-decoration: none;
 }
 
-.services .service-content .service-info p {
+.projects .project-content .project-info p {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 15px;
   transition: all 0.3s ease;
 }
 
-.services .service-content .service-action {
+.projects .project-content .project-action {
   margin-top: 20px;
 }
 
-.services .service-content .service-action .read-more-btn {
+.projects .project-content .project-action .read-more-btn {
   display: inline-block;
   padding: 8px 16px;
   background-color: var(--accent-color);
@@ -1532,30 +1190,30 @@ section,
   transition: all 0.3s ease;
 }
 
-.services .service-content .service-action .read-more-btn:hover {
+.projects .project-content .project-action .read-more-btn:hover {
   transform: translateX(5px);
 }
 
-.services .service-content .service-action .read-more-btn i {
+.projects .project-content .project-action .read-more-btn i {
   margin-left: 5px;
 }
 
 @media (max-width: 767px) {
-  .services .services-headline .services-title {
+  .projects .projects-headline .projects-title {
     font-size: 2rem;
   }
 
-  .services .services-image-container .services-image {
+  .projects .projects-image-container .projects-image {
     height: 350px;
   }
 
-  .services .services-image-container .circular-btn {
+  .projects .projects-image-container .circular-btn {
     bottom: -40px;
     right: 50%;
     transform: translateX(50%);
   }
 
-  .services .services-image-container .circular-btn .circular-link {
+  .projects .projects-image-container .circular-btn .circular-link {
     width: 130px;
     height: 130px;
     font-size: 0.9rem;
@@ -2747,18 +2405,18 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Service Details Section
+# project Details Section
 --------------------------------------------------------------*/
-.service-details .swiper-wrapper {
+.project-details .swiper-wrapper {
   height: auto !important;
 }
 
-.service-details .service-sidebar {
+.project-details .project-sidebar {
   position: sticky;
   top: 100px;
 }
 
-.service-details .service-sidebar .service-overview {
+.project-details .project-sidebar .project-overview {
   background: var(--surface-color);
   border-radius: 15px;
   overflow: hidden;
@@ -2766,7 +2424,7 @@ section,
   margin-bottom: 30px;
 }
 
-.service-details .service-sidebar .service-overview .overview-header {
+.project-details .project-sidebar .project-overview .overview-header {
   background: var(--accent-color);
   color: var(--contrast-color);
   padding: 20px;
@@ -2775,34 +2433,34 @@ section,
   gap: 15px;
 }
 
-.service-details .service-sidebar .service-overview .overview-header i {
+.project-details .project-sidebar .project-overview .overview-header i {
   font-size: 24px;
 }
 
-.service-details .service-sidebar .service-overview .overview-header h3 {
+.project-details .project-sidebar .project-overview .overview-header h3 {
   color: var(--contrast-color);
   margin: 0;
   font-size: 20px;
   font-weight: 600;
 }
 
-.service-details .service-sidebar .service-overview .overview-content {
+.project-details .project-sidebar .project-overview .overview-content {
   padding: 30px;
 }
 
-.service-details .service-sidebar .service-overview .overview-content h2 {
+.project-details .project-sidebar .project-overview .overview-content h2 {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 15px;
   color: var(--heading-color);
 }
 
-.service-details .service-sidebar .service-overview .overview-content p {
+.project-details .project-sidebar .project-overview .overview-content p {
   margin-bottom: 25px;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
 }
 
-.service-details .service-sidebar .service-overview .overview-content .cta-button .btn-get-started {
+.project-details .project-sidebar .project-overview .overview-content .cta-button .btn-get-started {
   display: inline-block;
   background: var(--accent-color);
   color: var(--contrast-color);
@@ -2814,13 +2472,13 @@ section,
   width: 100%;
 }
 
-.service-details .service-sidebar .service-overview .overview-content .cta-button .btn-get-started:hover {
+.project-details .project-sidebar .project-overview .overview-content .cta-button .btn-get-started:hover {
   background: color-mix(in srgb, var(--accent-color), black 10%);
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.service-details .service-sidebar .key-benefits {
+.project-details .project-sidebar .key-benefits {
   background: var(--surface-color);
   border-radius: 15px;
   padding: 30px;
@@ -2828,7 +2486,7 @@ section,
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
 }
 
-.service-details .service-sidebar .key-benefits h4 {
+.project-details .project-sidebar .key-benefits h4 {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -2836,7 +2494,7 @@ section,
   padding-bottom: 15px;
 }
 
-.service-details .service-sidebar .key-benefits h4:after {
+.project-details .project-sidebar .key-benefits h4:after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -2846,32 +2504,32 @@ section,
   background: var(--accent-color);
 }
 
-.service-details .service-sidebar .key-benefits ul {
+.project-details .project-sidebar .key-benefits ul {
   padding-left: 0;
   list-style: none;
 }
 
-.service-details .service-sidebar .key-benefits ul li {
+.project-details .project-sidebar .key-benefits ul li {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
   color: color-mix(in srgb, var(--default-color), transparent 15%);
 }
 
-.service-details .service-sidebar .key-benefits ul li i {
+.project-details .project-sidebar .key-benefits ul li i {
   color: var(--accent-color);
   font-size: 18px;
   margin-right: 12px;
 }
 
-.service-details .service-sidebar .contact-card {
+.project-details .project-sidebar .contact-card {
   background: var(--surface-color);
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
 }
 
-.service-details .service-sidebar .contact-card .contact-header {
+.project-details .project-sidebar .contact-card .contact-header {
   background: var(--accent-color);
   color: var(--contrast-color);
   padding: 20px;
@@ -2880,32 +2538,32 @@ section,
   gap: 15px;
 }
 
-.service-details .service-sidebar .contact-card .contact-header i {
+.project-details .project-sidebar .contact-card .contact-header i {
   font-size: 24px;
 }
 
-.service-details .service-sidebar .contact-card .contact-header h4 {
+.project-details .project-sidebar .contact-card .contact-header h4 {
   color: var(--contrast-color);
   margin: 0;
   font-size: 20px;
   font-weight: 600;
 }
 
-.service-details .service-sidebar .contact-card .contact-info {
+.project-details .project-sidebar .contact-card .contact-info {
   padding: 30px;
 }
 
-.service-details .service-sidebar .contact-card .contact-info .info-row {
+.project-details .project-sidebar .contact-card .contact-info .info-row {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.service-details .service-sidebar .contact-card .contact-info .info-row:last-child {
+.project-details .project-sidebar .contact-card .contact-info .info-row:last-child {
   margin-bottom: 0;
 }
 
-.service-details .service-sidebar .contact-card .contact-info .info-row i {
+.project-details .project-sidebar .contact-card .contact-info .info-row i {
   font-size: 20px;
   color: var(--accent-color);
   margin-right: 15px;
@@ -2918,34 +2576,34 @@ section,
   border-radius: 50%;
 }
 
-.service-details .service-sidebar .contact-card .contact-info .info-row div span {
+.project-details .project-sidebar .contact-card .contact-info .info-row div span {
   display: block;
   font-size: 14px;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   margin-bottom: 5px;
 }
 
-.service-details .service-sidebar .contact-card .contact-info .info-row div p {
+.project-details .project-sidebar .contact-card .contact-info .info-row div p {
   margin: 0;
   font-weight: 600;
   color: var(--heading-color);
 }
 
-.service-details .service-content .image-gallery {
+.project-details .project-content .image-gallery {
   margin-bottom: 40px;
 }
 
-.service-details .service-content .image-gallery .service-details-slider {
+.project-details .project-content .image-gallery .project-details-slider {
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.service-details .service-content .image-gallery .service-details-slider .swiper-pagination {
+.project-details .project-content .image-gallery .project-details-slider .swiper-pagination {
   bottom: 20px;
 }
 
-.service-details .service-content .image-gallery .service-details-slider .swiper-pagination .swiper-pagination-bullet {
+.project-details .project-content .image-gallery .project-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
   background: var(--contrast-color);
@@ -2953,14 +2611,14 @@ section,
   transition: all 0.3s ease;
 }
 
-.service-details .service-content .image-gallery .service-details-slider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+.project-details .project-content .image-gallery .project-details-slider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   opacity: 1;
   width: 25px;
   border-radius: 5px;
 }
 
-.service-details .service-content .image-gallery .service-details-slider .swiper-button-next,
-.service-details .service-content .image-gallery .service-details-slider .swiper-button-prev {
+.project-details .project-content .image-gallery .project-details-slider .swiper-button-next,
+.project-details .project-content .image-gallery .project-details-slider .swiper-button-prev {
   width: 45px;
   height: 45px;
   background: var(--accent-color);
@@ -2969,53 +2627,53 @@ section,
   transition: 0.3s;
 }
 
-.service-details .service-content .image-gallery .service-details-slider .swiper-button-next::after,
-.service-details .service-content .image-gallery .service-details-slider .swiper-button-prev::after {
+.project-details .project-content .image-gallery .project-details-slider .swiper-button-next::after,
+.project-details .project-content .image-gallery .project-details-slider .swiper-button-prev::after {
   font-size: 16px;
   font-weight: bold;
 }
 
-.service-details .service-content .image-gallery .service-details-slider .swiper-button-next:hover,
-.service-details .service-content .image-gallery .service-details-slider .swiper-button-prev:hover {
+.project-details .project-content .image-gallery .project-details-slider .swiper-button-next:hover,
+.project-details .project-content .image-gallery .project-details-slider .swiper-button-prev:hover {
   background: color-mix(in srgb, var(--accent-color), black 15%);
   transform: scale(1.1);
 }
 
-.service-details .service-content .section-header {
+.project-details .project-content .section-header {
   margin-bottom: 25px;
 }
 
-.service-details .service-content .section-header h3 {
+.project-details .project-content .section-header h3 {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
-.service-details .service-content .section-header .divider {
+.project-details .project-content .section-header .divider {
   width: 70px;
   height: 3px;
   background: var(--accent-color);
 }
 
-.service-details .service-content .details-content {
+.project-details .project-content .details-content {
   margin-bottom: 40px;
 }
 
-.service-details .service-content .details-content p {
+.project-details .project-content .details-content p {
   margin-bottom: 15px;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   line-height: 1.7;
 }
 
-.service-details .service-content .details-content p:last-child {
+.project-details .project-content .details-content p:last-child {
   margin-bottom: 0;
 }
 
-.service-details .service-content .service-features {
+.project-details .project-content .project-features {
   margin-bottom: 40px;
 }
 
-.service-details .service-content .service-features .feature-card {
+.project-details .project-content .project-features .feature-card {
   background: var(--surface-color);
   border-radius: 12px;
   padding: 30px;
@@ -3027,7 +2685,7 @@ section,
   overflow: hidden;
 }
 
-.service-details .service-content .service-features .feature-card:before {
+.project-details .project-content .project-features .feature-card:before {
   content: "";
   position: absolute;
   top: 0;
@@ -3039,22 +2697,22 @@ section,
   transition: 0.4s;
 }
 
-.service-details .service-content .service-features .feature-card:hover {
+.project-details .project-content .project-features .feature-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
-.service-details .service-content .service-features .feature-card:hover:before {
+.project-details .project-content .project-features .feature-card:hover:before {
   height: 100%;
 }
 
-.service-details .service-content .service-features .feature-card:hover .icon-wrapper {
+.project-details .project-content .project-features .feature-card:hover .icon-wrapper {
   background: var(--accent-color);
   color: var(--contrast-color);
   transform: scale(1.1);
 }
 
-.service-details .service-content .service-features .feature-card .icon-wrapper {
+.project-details .project-content .project-features .feature-card .icon-wrapper {
   width: 60px;
   height: 60px;
   display: flex;
@@ -3068,22 +2726,22 @@ section,
   transition: 0.3s;
 }
 
-.service-details .service-content .service-features .feature-card h4 {
+.project-details .project-content .project-features .feature-card h4 {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
-.service-details .service-content .service-features .feature-card p {
+.project-details .project-content .project-features .feature-card p {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   margin-bottom: 0;
 }
 
-.service-details .service-content .implementation-steps .step-container {
+.project-details .project-content .implementation-steps .step-container {
   position: relative;
 }
 
-.service-details .service-content .implementation-steps .step-container:before {
+.project-details .project-content .implementation-steps .step-container:before {
   content: "";
   position: absolute;
   top: 0;
@@ -3093,17 +2751,17 @@ section,
   background: color-mix(in srgb, var(--accent-color), transparent 80%);
 }
 
-.service-details .service-content .implementation-steps .step-container .step {
+.project-details .project-content .implementation-steps .step-container .step {
   display: flex;
   margin-bottom: 30px;
   position: relative;
 }
 
-.service-details .service-content .implementation-steps .step-container .step:last-child {
+.project-details .project-content .implementation-steps .step-container .step:last-child {
   margin-bottom: 0;
 }
 
-.service-details .service-content .implementation-steps .step-container .step .step-number {
+.project-details .project-content .implementation-steps .step-container .step .step-number {
   width: 40px;
   height: 40px;
   display: flex;
@@ -3118,23 +2776,23 @@ section,
   font-size: 14px;
 }
 
-.service-details .service-content .implementation-steps .step-container .step .step-content {
+.project-details .project-content .implementation-steps .step-container .step .step-content {
   flex: 1;
 }
 
-.service-details .service-content .implementation-steps .step-container .step .step-content h4 {
+.project-details .project-content .implementation-steps .step-container .step .step-content h4 {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 10px;
 }
 
-.service-details .service-content .implementation-steps .step-container .step .step-content p {
+.project-details .project-content .implementation-steps .step-container .step .step-content p {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   margin-bottom: 0;
 }
 
 @media (max-width: 991px) {
-  .service-details .service-sidebar {
+  .project-details .project-sidebar {
     position: relative;
     top: 0;
     margin-bottom: 40px;
@@ -3142,7 +2800,7 @@ section,
 }
 
 @media (max-width: 767px) {
-  .service-details .service-content .service-features .feature-card {
+  .project-details .project-content .project-features .feature-card {
     margin-bottom: 20px;
   }
 }

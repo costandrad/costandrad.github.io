@@ -51,11 +51,11 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#" class="active">Home</a></li>
-          <li><a href="#hero">Sobre Mim</a></li>
-          <li class="dropdown"><a href="#"><span>Projetos</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="#about">Sobre Mim</a></li>
+          <li class="dropdown"><a href="#projects"><span>Projetos</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Resolução de Livros</a></li>
-              <li class="dropdown"><a href="#"><span>Programação</span> <i
+              <li><a href="#textbook-solutions">Resolução de Livros</a></li>
+              <li class="dropdown"><a href="#programming"><span>Programação</span> <i
                     class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
                   <li><a href="#">Física e Matemática</a></li>
@@ -74,17 +74,17 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+    <!-- About Section -->
+    <section id="about" class="about section dark-background">
       <div class="container" data-aos="fade-up">
         <div class="row align-items-center">
           <div class="col-lg-6">
-            <div class="hero-content" data-aos="fade-up" data-aos-delay="100">
+            <div class="about-content" data-aos="fade-up" data-aos-delay="100">
               <h1><span class="highlight">Igo da Costa Andrade</span></h1>
               <p class="lead">Físico responsável pelo Laboratório de Ensino de Física, Universidade Federal do Tocantins
                 (UFT), campus de Palmas (desde 2009)</p>
               <h2><span class="highlight">Formação Acadêmica</span></h2>
-              <ul class="hero-features">
+              <ul class="about-features">
                 <li>
                   Mestrado Profissional em Matemática - PROFMAT 
                   <br>
@@ -103,78 +103,35 @@
           </div>
         </div>
       </div>
-    </section><!-- /Hero Section -->
+    </section><!-- /about Section -->
 
 
 
 
-    <!-- Services Section -->
-    <section id="services" class="services section">
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Projetos</h2>
+        <p>Resolução estruturada de problemas de física e matemática em LaTeX, além de projetos de Ciência de Dados, Modelagem e Simulação com implementação em Python, R e outras linguagens.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="services-row">
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="services-headline" data-aos="fade-up">
-                <p class="services-subtitle">Expert Guidance</p>
-                <h2 class="services-title">Innovative Solutions We Provide</h2>
-              </div>
-
-              <div class="services-description" data-aos="fade-up" data-aos-delay="100">
-                <p>Our team delivers cutting-edge strategies to help you achieve your goals. Discover how our tailored
-                  services can benefit your business.</p>
-              </div>
-
-              <div class="services-image-container" data-aos="fade-up" data-aos-delay="200">
-                <div class="services-image">
-                  <img src="assets/img/services/services-12.webp" alt="Services" class="img-fluid">
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-8">
-              <div class="services-grid">
+              <div class="projects-grid">
                 <div class="row gy-4">
-                  <!-- Service Item 1 -->
-                  <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-card">
-                      <div class="service-content text-center">
-                        <div class="service-icon">
-                          <i class="bi bi-cash-stack"></i>
-                        </div>
-                        <div class="service-info">
-                          <h3><a href="#">Strategic Planning</a></h3>
-                          <p>We offer customized plans to optimize your operations and improve overall efficiency across
-                            the board.</p>
-                          <div class="service-action">
-                            <a href="service-details.html" class="read-more-btn">Details <i
-                                class="bi bi-arrow-right"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Service Item 2 -->
+                  <!-- Project Item 1 -->
                   <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-card">
-                      <div class="service-content text-center">
-                        <div class="service-icon">
-                          <i class="bi bi-list-check"></i>
+                    <div class="project-card">
+                      <div class="project-content text-center">
+                        <div class="project-icon">
+                          <i class="bi-file-earmark-text"></i>
                         </div>
-                        <div class="service-info">
-                          <h3><a href="#">Digital Marketing</a></h3>
-                          <p>Our expert team crafts engaging campaigns that connect with your audience and drive
-                            conversions effectively.</p>
-                          <div class="service-action">
-                            <a href="service-details.html" class="read-more-btn">View More <i
+                        <div class="project-info">
+                          <h3><a href="#textbook-solutions">Resolução de Livros</a></h3>
+                          <p>Resolução detalhada de exercícios de livros clássicos de física e matemática, formatada em LaTeX para clareza e precisão.</p>
+                          <div class="project-action">
+                            <a href="project-details.html" class="read-more-btn">Ver Mais <i
                                 class="bi bi-arrow-right"></i></a>
                           </div>
                         </div>
@@ -182,39 +139,18 @@
                     </div>
                   </div>
 
-                  <!-- Service Item 3 -->
+                  <!-- project Item 2 -->
                   <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-card">
-                      <div class="service-content text-center">
-                        <div class="service-icon">
+                    <div class="project-card">
+                      <div class="project-content text-center">
+                        <div class="project-icon">
                           <i class="bi bi-bar-chart"></i>
                         </div>
-                        <div class="service-info">
-                          <h3><a href="#">Performance Analysis</a></h3>
-                          <p>We analyze your data to provide actionable insights, helping you make informed decisions
-                            for future growth.</p>
-                          <div class="service-action">
-                            <a href="service-details.html" class="read-more-btn">Read More <i
-                                class="bi bi-arrow-right"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Service Item 4 -->
-                  <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-                    <div class="service-card">
-                      <div class="service-content text-center">
-                        <div class="service-icon">
-                          <i class="bi bi-pie-chart"></i>
-                        </div>
-                        <div class="service-info">
-                          <h3><a href="#">Market Research</a></h3>
-                          <p>Understanding your market is key, and we provide comprehensive research to give you a
-                            competitive edge.</p>
-                          <div class="service-action">
-                            <a href="service-details.html" class="read-more-btn">Learn More <i
+                        <div class="project-info">
+                          <h3><a href="#programming">Programação</a></h3>
+                          <p>Projetos de programação aplicados à Ciência de Dados, Computação Científica, Modelagem e Simulação.</p>
+                          <div class="project-action">
+                            <a href="project-details.html" class="read-more-btn">Ver Mais <i
                                 class="bi bi-arrow-right"></i></a>
                           </div>
                         </div>
@@ -223,13 +159,11 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
+
 
       </div>
 
-    </section><!-- /Services Section -->
+    </section><!-- /Projects Section -->
 
     <!-- Clients Section -->
     <section id="clients" class="clients section">
@@ -1125,14 +1059,14 @@
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">projects</a></li>
+            <li><a href="#">Terms of project</a></li>
             <li><a href="#">Privacy policy</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
+          <h4>Our projects</h4>
           <ul>
             <li><a href="#">Web Design</a></li>
             <li><a href="#">Web Development</a></li>
