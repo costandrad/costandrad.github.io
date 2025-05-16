@@ -75,6 +75,7 @@ a {
 a:hover {
   color: color-mix(in srgb, var(--accent-color), transparent 25%);
   text-decoration: none;
+  cursor: pointer;
 }
 
 h1,
