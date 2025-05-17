@@ -1,6 +1,6 @@
 Thanks for downloading this template!
 
-Template Name: Scout
-Template URL: https://bootstrapmade.com/scout-bootstrap-multipurpose-template/
+Template Name: Invent
+Template URL: https://bootstrapmade.com/invent-bootstrap-business-template/
 Author: BootstrapMade.com
 License: https://bootstrapmade.com/license/
