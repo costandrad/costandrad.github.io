@@ -1185,9 +1185,13 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Services Section
+# Projects Section
 --------------------------------------------------------------*/
-.services .service-item {
+.projects {
+  background-color: color-mix(in srgb, var(--default-color), transparent 95%);
+}
+
+.projects .project-item {
   display: flex;
   background-color: var(--surface-color);
   border-radius: 12px;
@@ -1199,7 +1203,7 @@ section,
   transition: all 0.4s ease;
 }
 
-.services .service-item::before {
+.projects .project-item::before {
   content: "";
   position: absolute;
   left: 0;
@@ -1212,30 +1216,30 @@ section,
   transition: transform 0.4s cubic-bezier(0.65, 0, 0.35, 1);
 }
 
-.services .service-item:hover {
+.projects .project-item:hover {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   transform: translateY(-5px);
 }
 
-.services .service-item:hover::before {
+.projects .project-item:hover::before {
   transform: scaleY(1);
 }
 
-.services .service-item:hover .service-icon {
+.projects .project-item:hover .project-icon {
   background-color: var(--accent-color);
   color: var(--contrast-color);
   transform: rotateY(180deg);
 }
 
-.services .service-item:hover .service-icon i {
+.projects .project-item:hover .project-icon i {
   transform: rotateY(180deg);
 }
 
-.services .service-item:hover .service-link i {
+.projects .project-item:hover .project-link i {
   transform: translateX(5px);
 }
 
-.services .service-icon {
+.projects .project-icon {
   flex-shrink: 0;
   width: 70px;
   height: 70px;
@@ -1249,28 +1253,29 @@ section,
   transition: all 0.5s ease;
 }
 
-.services .service-icon i {
+.projects .project-icon i {
   font-size: 2rem;
   transition: transform 0.5s ease;
 }
 
-.services .service-content {
+.projects .project-content {
   flex-grow: 1;
 }
 
-.services .service-content h3 {
+
+.projects .project-content h3 {
   font-size: 1.4rem;
   margin-bottom: 1rem;
   font-weight: 700;
   color: var(--heading-color);
 }
 
-.services .service-content p {
+.projects .project-content p {
   margin-bottom: 1.25rem;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
 }
 
-.services .service-link {
+.projects .project-link {
   display: inline-flex;
   align-items: center;
   color: var(--accent-color);
@@ -1279,80 +1284,80 @@ section,
   transition: color 0.3s ease;
 }
 
-.services .service-link span {
+.projects .project-link span {
   margin-right: 0.5rem;
 }
 
-.services .service-link i {
+.projects .project-link i {
   transition: transform 0.3s ease;
 }
 
-.services .service-link:hover {
+.projects .project-link:hover {
   color: color-mix(in srgb, var(--accent-color), transparent 25%);
 }
 
 @media (max-width: 767.98px) {
-  .services .service-item {
+  .projects .project-item {
     padding: 1.5rem;
     margin-bottom: 1rem;
   }
 
-  .services .service-icon {
+  .projects .project-icon {
     width: 60px;
     height: 60px;
     margin-right: 1rem;
   }
 
-  .services .service-icon i {
+  .projects .project-icon i {
     font-size: 1.5rem;
   }
 
-  .services .service-content h3 {
+  .projects .project-content h3 {
     font-size: 1.2rem;
     margin-bottom: 0.75rem;
   }
 
-  .services .service-content p {
+  .projects .project-content p {
     margin-bottom: 1rem;
     font-size: 0.95rem;
   }
 }
 
 @media (max-width: 575.98px) {
-  .services .service-item {
+  .projects .project-item {
     flex-direction: column;
     text-align: center;
   }
 
-  .services .service-item::before {
+  .projects .project-item::before {
     width: 100%;
     height: 4px;
     transform: scaleX(0);
     transform-origin: left;
   }
 
-  .services .service-item:hover::before {
+  .projects .project-item:hover::before {
     transform: scaleX(1);
   }
 
-  .services .service-icon {
+  .projects .project-icon {
     margin-right: 0;
     margin-bottom: 1.25rem;
   }
 
-  .services .service-link {
+  .projects .project-link {
     justify-content: center;
   }
 }
 
 /*--------------------------------------------------------------
-# Services Alt Section
+# Projects Alt Section
 --------------------------------------------------------------*/
-.services-alt .content-block {
+.projects-alt .content-block {
   margin-right: 30px;
 }
 
-.services-alt .content-block .subtitle {
+.projects-alt .content-block .subtitle {
   font-size: 0.9rem;
   text-transform: uppercase;
   font-weight: 600;
@@ -1360,24 +1365,24 @@ section,
   color: color-mix(in srgb, var(--accent-color), transparent 25%);
 }
 
-.services-alt .content-block .title {
+.projects-alt .content-block .title {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
   line-height: 1.3;
 }
 
-.services-alt .content-block .description {
+.projects-alt .content-block .description {
   margin-bottom: 1.8rem;
   font-size: 1rem;
   line-height: 1.7;
 }
 
-.services-alt .content-block .button-wrapper {
+.projects-alt .content-block .button-wrapper {
   margin-top: 2rem;
 }
 
-.services-alt .content-block .button-wrapper .btn {
+.projects-alt .content-block .button-wrapper .btn {
   background-color: var(--accent-color);
   color: var(--contrast-color);
   padding: 0.8rem 1.8rem;
@@ -1386,41 +1391,41 @@ section,
   font-weight: 500;
 }
 
-.services-alt .content-block .button-wrapper .btn:hover {
+.projects-alt .content-block .button-wrapper .btn:hover {
   background-color: color-mix(in srgb, var(--accent-color), #000 10%);
   transform: translateY(-3px);
 }
 
 @media (max-width: 992px) {
-  .services-alt .content-block {
+  .projects-alt .content-block {
     margin-right: 0;
     margin-bottom: 3rem;
   }
 }
 
-.services-alt .services-list .service-item {
+.projects-alt .projects-list .project-item {
   position: relative;
   padding: 2.5rem 0;
   border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
-.services-alt .services-list .service-item:first-child {
+.projects-alt .projects-list .project-item:first-child {
   padding-top: 0;
 }
 
-.services-alt .services-list .service-item:hover .service-icon {
+.projects-alt .projects-list .project-item:hover .project-icon {
   background-color: var(--accent-color);
 }
 
-.services-alt .services-list .service-item:hover .service-icon i {
+.projects-alt .projects-list .project-item:hover .project-icon i {
   color: var(--contrast-color);
 }
 
-.services-alt .services-list .service-item:hover .service-content h4 a {
+.projects-alt .projects-list .project-item:hover .project-content h4 a {
   color: var(--accent-color);
 }
 
-.services-alt .services-list .service-icon {
+.projects-alt .projects-list .project-icon {
   height: 5rem;
   width: 5rem;
   display: flex;
@@ -1433,58 +1438,58 @@ section,
   flex-shrink: 0;
 }
 
-.services-alt .services-list .service-icon i {
+.projects-alt .projects-list .project-icon i {
   font-size: 2.5rem;
   color: var(--accent-color);
   transition: all 0.3s ease;
 }
 
-.services-alt .services-list .service-content {
+.projects-alt .projects-list .project-content {
   position: relative;
   width: 100%;
 }
 
-.services-alt .services-list .service-content h4 {
+.projects-alt .projects-list .project-content h4 {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
   line-height: 1.5;
 }
 
-.services-alt .services-list .service-content h4 a {
+.projects-alt .projects-list .project-content h4 a {
   color: var(--heading-color);
   transition: color 0.3s;
 }
 
-.services-alt .services-list .service-content h4 a:hover {
+.projects-alt .projects-list .project-content h4 a:hover {
   color: var(--accent-color);
 }
 
-.services-alt .services-list .service-content p {
+.projects-alt .projects-list .project-content p {
   margin-bottom: 0.25rem;
   font-size: 0.95rem;
 }
 
 @media (max-width: 768px) {
-  .services-alt .services-list .service-item {
+  .projects-alt .projects-list .project-item {
     padding: 2rem 0;
   }
 
-  .services-alt .services-list .service-icon {
+  .projects-alt .projects-list .project-icon {
     height: 4rem;
     width: 4rem;
     margin-right: 1rem;
   }
 
-  .services-alt .services-list .service-icon i {
+  .projects-alt .projects-list .project-icon i {
     font-size: 2rem;
   }
 
-  .services-alt .services-list .service-content h4 {
+  .projects-alt .projects-list .project-content h4 {
     font-size: 1.25rem;
   }
 
-  .services-alt .services-list .service-content p {
+  .projects-alt .projects-list .project-content p {
     font-size: 0.9rem;
   }
 }
@@ -2636,23 +2641,23 @@ section,
 /*--------------------------------------------------------------
 # Service Details Section
 --------------------------------------------------------------*/
-.service-details .service-main-image {
+.project-details .project-main-image {
   position: relative;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
-.service-details .service-main-image img {
+.project-details .project-main-image img {
   width: 100%;
   transition: transform 0.6s;
 }
 
-.service-details .service-main-image:hover img {
+.project-details .project-main-image:hover img {
   transform: scale(1.05);
 }
 
-.service-details .service-main-image .experience-badge {
+.project-details .project-main-image .experience-badge {
   position: absolute;
   bottom: 30px;
   right: 30px;
@@ -2665,31 +2670,31 @@ section,
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-.service-details .service-main-image .experience-badge span {
+.project-details .project-main-image .experience-badge span {
   font-size: 36px;
   font-weight: 700;
   display: block;
   line-height: 1;
 }
 
-.service-details .service-main-image .experience-badge p {
+.project-details .project-main-image .experience-badge p {
   margin: 0;
   font-size: 14px;
   opacity: 0.9;
 }
 
-.service-details .service-main-content {
+.project-details .project-main-content {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.service-details .service-main-content .section-header {
+.project-details .project-main-content .section-header {
   margin-bottom: 25px;
 }
 
-.service-details .service-main-content .section-header .section-subtitle {
+.project-details .project-main-content .section-header .section-subtitle {
   display: inline-block;
   padding: 8px 16px;
   background: color-mix(in srgb, var(--accent-color), transparent 90%);
@@ -2700,52 +2705,52 @@ section,
   margin-bottom: 15px;
 }
 
-.service-details .service-main-content .section-header h2 {
+.project-details .project-main-content .section-header h2 {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
-  .service-details .service-main-content .section-header h2 {
+  .project-details .project-main-content .section-header h2 {
     font-size: 28px;
   }
 }
 
-.service-details .service-main-content .lead {
+.project-details .project-main-content .lead {
   font-size: 18px;
   margin-bottom: 20px;
 }
 
-.service-details .service-main-content p {
+.project-details .project-main-content p {
   color: color-mix(in srgb, var(--default-color), transparent 25%);
   margin-bottom: 20px;
 }
 
-.service-details .service-benefits {
+.project-details .project-benefits {
   padding: 0;
   list-style: none;
   margin: 20px 0 0 0;
 }
 
-.service-details .service-benefits li {
+.project-details .project-benefits li {
   padding: 12px 0;
   position: relative;
   display: flex;
   align-items: center;
 }
 
-.service-details .service-benefits li i {
+.project-details .project-benefits li i {
   color: var(--accent-color);
   font-size: 20px;
   margin-right: 15px;
 }
 
-.service-details .service-tabs {
+.project-details .project-tabs {
   margin-top: 80px;
 }
 
-.service-details .service-tabs .nav-tabs {
+.project-details .project-tabs .nav-tabs {
   border: none;
   display: flex;
   flex-wrap: nowrap;
@@ -2756,24 +2761,24 @@ section,
 }
 
 @media (max-width: 768px) {
-  .service-details .service-tabs .nav-tabs {
+  .project-details .project-tabs .nav-tabs {
     flex-wrap: nowrap;
     white-space: nowrap;
     overflow-x: auto;
     scrollbar-width: thin;
   }
 
-  .service-details .service-tabs .nav-tabs::-webkit-scrollbar {
+  .project-details .project-tabs .nav-tabs::-webkit-scrollbar {
     height: 5px;
   }
 
-  .service-details .service-tabs .nav-tabs::-webkit-scrollbar-thumb {
+  .project-details .project-tabs .nav-tabs::-webkit-scrollbar-thumb {
     background: color-mix(in srgb, var(--default-color), transparent 80%);
     border-radius: 10px;
   }
 }
 
-.service-details .service-tabs .nav-tabs .nav-link {
+.project-details .project-tabs .nav-tabs .nav-link {
   border: none;
   padding: 15px 25px;
   border-radius: 50px;
@@ -2786,35 +2791,35 @@ section,
   align-items: center;
 }
 
-.service-details .service-tabs .nav-tabs .nav-link i {
+.project-details .project-tabs .nav-tabs .nav-link i {
   margin-right: 10px;
   font-size: 18px;
 }
 
-.service-details .service-tabs .nav-tabs .nav-link.active {
+.project-details .project-tabs .nav-tabs .nav-link.active {
   background: var(--accent-color);
   color: var(--contrast-color);
 }
 
-.service-details .service-tabs .tab-content {
+.project-details .project-tabs .tab-content {
   padding: 40px;
   border-radius: 16px;
   background: var(--surface-color);
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
 }
 
-.service-details .service-tabs .tab-content h3 {
+.project-details .project-tabs .tab-content h3 {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 15px;
   color: var(--heading-color);
 }
 
-.service-details .service-tabs .tab-content p {
+.project-details .project-tabs .tab-content p {
   color: color-mix(in srgb, var(--default-color), transparent 25%);
 }
 
-.service-details .service-tabs .tab-content .feature-item {
+.project-details .project-tabs .tab-content .feature-item {
   padding: 20px;
   background: color-mix(in srgb, var(--background-color), transparent 50%);
   border-radius: 12px;
@@ -2822,43 +2827,43 @@ section,
   transition: transform 0.3s;
 }
 
-.service-details .service-tabs .tab-content .feature-item:hover {
+.project-details .project-tabs .tab-content .feature-item:hover {
   transform: translateY(-5px);
 }
 
-.service-details .service-tabs .tab-content .feature-item i {
+.project-details .project-tabs .tab-content .feature-item i {
   color: var(--accent-color);
   font-size: 28px;
   margin-bottom: 15px;
 }
 
-.service-details .service-tabs .tab-content .feature-item h4 {
+.project-details .project-tabs .tab-content .feature-item h4 {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
-.service-details .service-tabs .tab-content .feature-item p {
+.project-details .project-tabs .tab-content .feature-item p {
   font-size: 14px;
   margin-bottom: 0;
 }
 
-.service-details .service-testimonial {
+.project-details .project-testimonial {
   margin-top: 80px;
 }
 
-.service-details .service-testimonial .testimonial-card {
+.project-details .project-testimonial .testimonial-card {
   padding: 40px;
   border-radius: 16px;
   background: var(--surface-color);
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
 }
 
-.service-details .service-testimonial .testimonial-card .client-info {
+.project-details .project-testimonial .testimonial-card .client-info {
   text-align: center;
 }
 
-.service-details .service-testimonial .testimonial-card .client-info img {
+.project-details .project-testimonial .testimonial-card .client-info img {
   width: 90px;
   height: 90px;
   object-fit: cover;
@@ -2867,34 +2872,34 @@ section,
 }
 
 @media (max-width: 767px) {
-  .service-details .service-testimonial .testimonial-card .client-info img {
+  .project-details .project-testimonial .testimonial-card .client-info img {
     margin: 0 auto 20px;
   }
 }
 
-.service-details .service-testimonial .testimonial-card .client-info h4 {
+.project-details .project-testimonial .testimonial-card .client-info h4 {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 5px;
 }
 
-.service-details .service-testimonial .testimonial-card .client-info p {
+.project-details .project-testimonial .testimonial-card .client-info p {
   color: color-mix(in srgb, var(--default-color), transparent 25%);
   margin-bottom: 10px;
   font-size: 14px;
 }
 
-.service-details .service-testimonial .testimonial-card .client-info .stars {
+.project-details .project-testimonial .testimonial-card .client-info .stars {
   color: #FFD700;
   font-size: 14px;
 }
 
-.service-details .service-testimonial .testimonial-card .quote {
+.project-details .project-testimonial .testimonial-card .quote {
   position: relative;
   padding-left: 30px;
 }
 
-.service-details .service-testimonial .testimonial-card .quote i {
+.project-details .project-testimonial .testimonial-card .quote i {
   position: absolute;
   left: 0;
   top: 0;
@@ -2902,13 +2907,13 @@ section,
   color: var(--accent-color);
 }
 
-.service-details .service-testimonial .testimonial-card .quote p {
+.project-details .project-testimonial .testimonial-card .quote p {
   font-style: italic;
   font-size: 16px;
   color: color-mix(in srgb, var(--default-color), transparent 15%);
 }
 
-.service-details .service-cta {
+.project-details .project-cta {
   margin-top: 80px;
   padding: 60px;
   border-radius: 16px;
@@ -2916,21 +2921,21 @@ section,
   box-shadow: 0 10px 30px color-mix(in srgb, var(--accent-color), transparent 85%);
 }
 
-.service-details .service-cta h3 {
+.project-details .project-cta h3 {
   font-size: 32px;
   font-weight: 700;
   color: var(--contrast-color);
   margin-bottom: 15px;
 }
 
-.service-details .service-cta p {
+.project-details .project-cta p {
   font-size: 18px;
   color: var(--contrast-color);
   opacity: 0.9;
   margin-bottom: 30px;
 }
 
-.service-details .service-cta .btn-service {
+.project-details .project-cta .btn-service {
   display: inline-flex;
   align-items: center;
   background: var(--contrast-color);
@@ -2941,52 +2946,52 @@ section,
   transition: all 0.3s;
 }
 
-.service-details .service-cta .btn-service i {
+.project-details .project-cta .btn-service i {
   margin-left: 8px;
   transition: transform 0.3s;
 }
 
-.service-details .service-cta .btn-service:hover {
+.project-details .project-cta .btn-service:hover {
   background: var(--background-color);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.service-details .service-cta .btn-service:hover i {
+.project-details .project-cta .btn-service:hover i {
   transform: translateX(5px);
 }
 
 @media (max-width: 767px) {
-  .service-details .service-cta {
+  .project-details .project-cta {
     padding: 40px 20px;
   }
 
-  .service-details .service-cta h3 {
+  .project-details .project-cta h3 {
     font-size: 26px;
   }
 }
 
 @media (max-width: 991px) {
-  .service-details .service-main-content {
+  .project-details .project-main-content {
     margin-top: 30px;
   }
 
-  .service-details .service-tabs {
+  .project-details .project-tabs {
     margin-top: 50px;
   }
 
-  .service-details .service-testimonial,
-  .service-details .service-cta {
+  .project-details .project-testimonial,
+  .project-details .project-cta {
     margin-top: 50px;
   }
 }
 
 @media (max-width: 767px) {
-  .service-details .client-info {
+  .project-details .client-info {
     flex-direction: column;
     margin-bottom: 30px;
   }
 
-  .service-details .service-tabs .tab-content {
+  .project-details .project-tabs .tab-content {
     padding: 30px 20px;
   }
 }
