@@ -1610,6 +1610,10 @@ section,
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
+.portfolio {
+  margin-top: 80px;
+}
+
 .portfolio .portfolio-filters-container {
   margin-bottom: 40px;
 }
