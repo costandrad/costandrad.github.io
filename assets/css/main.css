@@ -768,6 +768,7 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
+  min-height: 100vh;
   padding-top: 140px;
   position: relative;
   overflow: hidden;
