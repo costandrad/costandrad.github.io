@@ -1745,7 +1745,7 @@ section,
 
 .portfolio .portfolio-card .portfolio-content h3 {
   font-size: 20px;
-  margin: 0 0 15px;
+  margin: 0 0 5px;
   font-weight: 600;
   transition: color 0.3s ease;
 }
@@ -1778,6 +1778,13 @@ section,
   .portfolio .portfolio-card .portfolio-content p {
     font-size: 14px;
   }
+}
+
+.portfolio-content h4 {
+  font-size: smaller;
+  padding-bottom: 5px;
+  margin-top: 0;
+  color: var(--nav-color);
 }
 
 
